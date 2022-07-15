@@ -1,0 +1,647 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "游明朝", "Yu Mincho", "YuMincho", "HGS明朝E", "メイリオ", "Meiryo", "sans-serif";
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #5d5c7e;
+}
+
+.button {
+  border: 1px solid #d4d4d4;
+  background-color: #616185;
+  color: #fff;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.2rem 2rem;
+  font-size: 1.4rem;
+  opacity: 1;
+}
+.button:hover {
+  opacity: 0.7;
+}
+.button a {
+  text-align: center;
+  text-decoration: none;
+  padding: 0 0.8rem;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #5d5c7e;
+}
+
+.p-8 {
+  padding: 0.8rem;
+}
+
+.margin-tb-6 {
+  margin: 6rem 0;
+}
+
+.header {
+  height: 7.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+.header .header__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header__phone span {
+  color: #5d5c7e;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+.header .header__phone div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header__phone div a,
+.header .header__phone div p {
+  font-size: 1.4rem;
+}
+
+.container {
+  width: 100%;
+}
+.container .btn--gotop {
+  display: none;
+}
+.container .container__banner {
+  background-image: url("./img/SO_20_装花祭壇_06_a.jpg");
+  background-color: #cccccc;
+  height: 72rem;
+  max-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .container__banner__children {
+  background-image: url("./img/1.jpg");
+  background-color: #cccccc;
+  height: 36rem;
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .container__link {
+  width: 87.5rem;
+  font-size: 1.2rem;
+  max-width: 100%;
+  margin: 1.6rem auto;
+}
+.container .container__link span {
+  margin: 0 1rem;
+}
+.container .container__flow__list {
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .container__flow__list h2 {
+  font-size: 3rem;
+  margin-bottom: 6rem;
+}
+.container .container__flow__list .container__flow__item {
+  width: 95.5rem;
+  max-width: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .container__flow__list .container__flow__item .button {
+  width: 100%;
+  padding: 0.6rem 0;
+  margin-bottom: 2.6rem;
+}
+.container .container__flow__list .container__flow__item span {
+  font-size: 1.6rem;
+}
+.container .container__flow__list .container__flow__item img {
+  width: 5.4rem;
+  height: 2.7rem;
+  margin: 5rem 0;
+}
+.container .container__product__list__child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 6rem 0;
+}
+.container .container__product__list__child .slider-next,
+.container .container__product__list__child .slider-prev {
+  display: none;
+}
+.container .container__product__list__child.background-img {
+  background-color: #ccc;
+  position: relative;
+}
+.container .container__product__list__child.background-img::after {
+  width: 90.7rem;
+  max-width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background-image: url("./img/Asset 7.png"), url("./img/Asset 8.png");
+  background-position: left 3rem, right 3rem;
+  background-repeat: no-repeat;
+}
+.container .container__product__list__child.background-img h2 {
+  margin-top: 7rem;
+  margin-bottom: 2.6rem;
+}
+.container .container__product__list__child.background-img span {
+  width: 60rem;
+}
+.container .container__product__list__child h2 {
+  font-size: 3rem;
+  margin-bottom: 7rem;
+}
+.container .container__product__list__child span {
+  width: 87.5rem;
+  max-width: 100%;
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+.container .container__product__list__child .product__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 90.7rem;
+  margin-left: -1.6rem;
+  margin-right: -1.6rem;
+}
+.container .container__product__list__child .product__list .product__item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 1.6rem;
+  margin-bottom: 4rem;
+}
+.container .container__product__list__child .product__list .product__item.w-33 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  padding: 0 1.2rem;
+}
+.container .container__product__list__child .product__list .product__item img {
+  width: 100%;
+  height: 20.5rem;
+}
+.container .container__product__list__child .product__list .product__item h4 {
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.container .container__product__list__child .product__list .product__item span {
+  font-size: 1.4rem;
+}
+.container .container__flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+  margin: 5rem 0;
+}
+.container .container__flow img {
+  width: 9rem;
+  height: 9rem;
+  margin-bottom: 3rem;
+}
+.container .container__flow .container__flow__title {
+  font-size: 3rem;
+}
+.container .container__flow .container__flow__text {
+  margin: 4rem 0;
+  display: block;
+  font-size: 1.6rem;
+  width: 84rem;
+}
+.container .container__product {
+  background-image: url("./img/background_two.png");
+  background-size: 170% 170%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  width: 100%;
+}
+.container .container__product .container__product__title {
+  width: 60rem;
+  font-size: 3rem;
+  padding-top: 15rem;
+  text-align: center;
+}
+.container .container__product .container__product__text {
+  margin: 4.6rem 0;
+  display: block;
+  font-size: 1.6rem;
+  width: 84rem;
+}
+.container .container__product .container__product__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+.container .container__product .container__product__list .container__product__item {
+  width: 43rem;
+  height: 26rem;
+}
+.container .container__product .container__product__list .container__product__item img {
+  width: 100%;
+  height: 100%;
+}
+.container .container__product .container__product__list .container__product__item span {
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.container .container__map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 8rem;
+  position: relative;
+}
+.container .container__map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 84rem;
+  border-top: 1px dotted #cccccc;
+  text-align: center;
+}
+.container .container__map h2 {
+  margin-top: 8rem;
+  font-size: 3rem;
+}
+.container .container__map .container__map__text {
+  margin: 4.6rem 0;
+  display: block;
+  width: 84rem;
+}
+.container .container__map .container__map__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.container .container__map .container__map__list img {
+  width: 50rem;
+  height: 31rem;
+}
+.container .container__contact {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .container__contact .container__contact__info {
+  margin: 4rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 60rem;
+  position: relative;
+}
+.container .container__contact .container__contact__info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  border-right: 2px solid #5d5c7e;
+  text-align: center;
+}
+.container .container__contact .container__contact__info .container__contact__info__address,
+.container .container__contact .container__contact__info .container__contact__info__location {
+  width: 26rem;
+}
+.container .container__contact .container__contact__info .container__contact__info__address .button,
+.container .container__contact .container__contact__info .container__contact__info__location .button {
+  font-size: 1.6rem;
+}
+.container .container__contact .container__contact__info .container__contact__info__address div,
+.container .container__contact .container__contact__info .container__contact__info__location div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.container .container__contact .container__contact__info .container__contact__info__address div img,
+.container .container__contact .container__contact__info .container__contact__info__location div img {
+  margin-right: 2rem;
+}
+.container .container__contact .container__contact__connect {
+  width: 100%;
+  background-color: #cccccc;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .container__contact .container__contact__connect h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.container .container__contact .container__contact__connect div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 95.5rem;
+  max-width: 100%;
+}
+.container .container__contact .container__contact__connect div.w-87 {
+  width: 87.5rem;
+}
+.container .container__contact .container__contact__connect div .phone,
+.container .container__contact .container__contact__connect div .gmail {
+  width: 40rem;
+  height: 6.6rem;
+  font-size: 2.5rem;
+}
+.container .container__contact .container__contact__connect div .phone .phone__img,
+.container .container__contact .container__contact__connect div .gmail .phone__img {
+  width: 4rem;
+  height: 3.8rem;
+}
+.container .container__contact .container__contact__connect div .phone .gmail__img,
+.container .container__contact .container__contact__connect div .gmail .gmail__img {
+  width: 4rem;
+  height: 2.8rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer img {
+  width: 8rem;
+  height: 8rem;
+  margin: 3rem 0;
+}
+.footer p {
+  color: #5d5c7e;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    height: 100%;
+  }
+  .header .header__phone {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  .container .btn--gotop {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    color: #5d5c7e;
+    bottom: 4rem;
+    right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    z-index: 1;
+  }
+  .container .btn--gotop img {
+    transform: rotate(180deg);
+  }
+  .container .container__banner {
+    height: 36rem;
+  }
+  .container .container__link {
+    display: none;
+  }
+  .container .container__flow {
+    margin: 4rem 0;
+    font-size: 2.4rem;
+  }
+  .container .container__flow .container__flow__text {
+    width: 65rem;
+  }
+  .container .container__flow .button {
+    padding: 0.5rem 5rem;
+    font-size: 2.4rem;
+  }
+  .container .container__flow__list {
+    width: 65.5rem;
+    margin: 8rem auto;
+  }
+  .container .container__flow__list h2 {
+    margin-bottom: 8rem;
+  }
+  .container .container__flow__list .container__flow__item .button {
+    padding: 1.1rem 0;
+  }
+  .container .container__flow__list .container__flow__item img {
+    margin: 3rem 0;
+  }
+  .container .container__product__list__child {
+    width: 67rem;
+    margin: 8rem auto;
+  }
+  .container .container__product__list__child.background-img {
+    display: none;
+  }
+  .container .container__product__list__child.background-color {
+    color: #fff;
+    background-color: #5d5c7e;
+  }
+  .container .container__product__list__child.slider {
+    position: relative;
+  }
+  .container .container__product__list__child.slider .slider-next {
+    right: -25px;
+  }
+  .container .container__product__list__child.slider .slider-prev {
+    left: -25px;
+  }
+  .container .container__product__list__child.slider .slider-prev,
+.container .container__product__list__child.slider .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .container__product__list__child .product__list {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    transition: transform 0.25s linear;
+    height: 100%;
+  }
+  .container .container__product__list__child .product__list .product__item {
+    width: 52rem;
+    max-width: 100%;
+    margin: 0 auto 4rem;
+    flex: 1 0 100%;
+    user-select: none;
+  }
+  .container .container__product__list__child .product__list .product__item.w-33 {
+    flex: none;
+    max-width: 100%;
+  }
+  .container .container__product__list__child .product__list .product__item img {
+    height: 31rem;
+  }
+  .container .container__product__list__child .product__list .product__item span {
+    text-align: center;
+    display: block;
+  }
+  .container .container__product {
+    background-size: 350% 110%;
+  }
+  .container .container__product .container__product__title {
+    width: 50rem;
+  }
+  .container .container__product .container__product__text {
+    width: 65rem;
+  }
+  .container .container__product .container__product__list {
+    justify-content: center;
+  }
+  .container .container__product .container__product__list .container__product__item {
+    width: 65rem;
+    height: 39rem;
+    margin-bottom: 10rem;
+  }
+  .container .container__product .container__product__list .container__product__item:last-child {
+    margin-bottom: 3rem;
+  }
+  .container .container__product .container__product__list .container__product__item span {
+    font-size: 2rem;
+  }
+  .container .container__product .button {
+    padding: 0.5rem 5rem;
+    font-size: 2.4rem;
+  }
+  .container .container__map::before {
+    width: 99%;
+  }
+  .container .container__map .container__map__text {
+    width: 65rem;
+  }
+  .container .container__map .container__map__list {
+    justify-content: center;
+  }
+  .container .container__map .container__map__list img {
+    width: 65rem;
+    height: 39rem;
+    margin-bottom: 1rem;
+  }
+  .container .container__map .container__map__list img:nth-child(2) {
+    width: 32rem;
+    height: 20rem;
+    margin-right: 0.5rem;
+  }
+  .container .container__map .container__map__list img:nth-child(3) {
+    width: 32rem;
+    height: 20rem;
+    margin-left: 0.5rem;
+  }
+  .container .container__contact {
+    align-items: flex-start;
+  }
+  .container .container__contact span {
+    width: 65rem;
+    margin: 0 auto;
+  }
+  .container .container__contact .container__contact__info {
+    margin: 6rem auto;
+    width: 53rem;
+    position: inherit;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .container__contact .container__contact__info::after {
+    border-right: none;
+  }
+  .container .container__contact .container__contact__info .container__contact__info__address,
+.container .container__contact .container__contact__info .container__contact__info__location {
+    width: 100%;
+  }
+  .container .container__contact .container__contact__info .container__contact__info__address div,
+.container .container__contact .container__contact__info .container__contact__info__location div {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .container .container__contact .container__contact__info .container__contact__info__address div img,
+.container .container__contact .container__contact__info .container__contact__info__location div img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .container .container__contact .container__contact__info .container__contact__info__address {
+    margin-bottom: 5rem;
+  }
+  .container .container__contact .container__contact__info .container__contact__info__address .button {
+    font-size: 2.4rem;
+    margin-top: 5rem;
+    padding: 0.5rem 3rem;
+  }
+  .container .container__contact .container__contact__connect h2 {
+    line-height: 1;
+  }
+  .container .container__contact .container__contact__connect div {
+    display: block;
+    width: 54rem;
+    justify-content: center;
+  }
+  .container .container__contact .container__contact__connect div .phone,
+.container .container__contact .container__contact__connect div .gmail {
+    width: 100%;
+  }
+  .container .container__contact .container__contact__connect div .phone {
+    margin: 4rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
