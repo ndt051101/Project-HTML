@@ -1,6 +1,7 @@
 $font: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "游明朝", "Yu Mincho",
     "YuMincho", "HGS明朝E", "メイリオ", "Meiryo", "sans-serif";
 $color-primary: #5d5c7e;
+$font-size: 62.5%;
 $height-header: 7.8rem;
 $height-banner: 72rem;
 $height-banner-child: 36rem;
@@ -12,7 +13,7 @@ $height-banner-child: 36rem;
 }
 
 html {
-    font-size: 62.5%;
+    font-size: $font-size;
     scroll-behavior: smooth;
 }
 
